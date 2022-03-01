@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+/* home */
+#home {
+    background: url(img/casey-horner-9XRpNnTqdJE-unsplash.jpg);
+    background-size: cover;
+    background-position: top center;
+    position : relative;
+    z-index : 1;
+}
+
+#home::after { 
+    content: '';
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width : 100%;
+    opacity: .6;
+    z-index: -1;
+}
+
+#home h1{
+    color: white;
+    width: fit-content;
+    display:block;
+    font-size: 4rem;
+}
+
+#alf {
+    color: #3235a6;
+}
+
+/* end home */
+
+/* about me */
+#alf-photo {
+    max-width: 155px;
+    max-height: 155px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#about-me .about-me{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#about-me .sec-title{
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#about-me .about-me-bottom{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#about-me .item {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px;
+    margin: 10px;
+    background: url(/img/nikita-pishchugin-IE9PHcIvBow-unsplash.jpg);
+    background-repeat: none;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+#about-me .item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .8;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+#me {
+    color: #3235a6;
+}
+
+.item{
+    color: white;
+}
+
+.item h2{
+    margin-bottom: 30px;
+}
+
+.item li {
+    margin-bottom: 7px;
+}
+
+.item ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-me-top {
+    margin-bottom: 50px;
+}
+/* end about me */
